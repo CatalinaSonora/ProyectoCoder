@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import "variables"; 
+
+@media only screen and (max-width: 768px) {
+
+/*----- Menú ------*/
+#menu {
+  text-align: center;
+  position: fixed;
+}
+  
+ul {
+    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: $color-destacar;
+}
+    
+li {
+      
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1pt;
+      padding: 30px;
+}
+a {
+        text-decoration: none;
+        color: $color-textos;
+        font-size: 10px;
+}
+/*-------textos y titulos-----------*/
+.texto {
+
+  font-size: $texto-responsive;
+  text-align: center;
+   display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      padding: 15px;
+
+}
+
+h3 {
+      color: #0c1110;
+      font-weight: bold;
+      text-align: center;
+      font-weight: 600;
+      margin: 15px;
+      padding: 15px;
+      font-size: 5px;
+      letter-spacing: 4px;
+}
+
+/*--------Footer----*/
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-destacar;
+  text-align: center;
+  padding: 15px;
+}
+
+.flexTatuajes video {
+  padding: 15px;
+
+}
+
+
+/*----serigrafia------*/
+
+.galeria_1 img {
+
+padding: 15px;
+
+}
+
+}
+
+/*--------------main------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f4f0df;
+  
+}
+
+.container-flow {
+  min-height: 100%;
+}
+
+main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+header {
+  
+  height: 100px;
+  backgroud-color: $color-destacar;
+
+}
+
+/*--------Títulos-----*/
+
+h1 {
+  color: #0c1110;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 600;
+  margin: 15px;
+  padding: 30px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #0c1110;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 600;
+  margin: 15px;
+  padding: 15px;
+  font-size: 15pt;
+  letter-spacing: 4px;
+}
+
+.texto {
+
+font-size: $texto-intro;
+text-align: center;
+ display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+.btn {
+  
+  background-color: $color-textos;
+  border-color: $color-textos;
+
+}
+
+
+#carrusel img {
+max-width: 800px;
+height:auto;
+
+}
+/*------Menú----------------*/
+
+
+#menu {
+  top: 0px;
+  text-align: right;
+  display: flex;
+  flex-flow: row wrap;
+  
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    background-color: $color-destacar;
+    
+    li {
+      
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1pt;
+      padding-top: 16px;
+      padding: 16px 22px;
+
+      a {
+        text-decoration: none;
+        color: $color-textos;
+      }
+
+    }
+  }
+}
+
+a:hover {
+  
+  background: white;
+}
+
+/*--------Footer----*/
+#footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-destacar;
+  text-align: center;
+  padding: 15px;
+}
+
+.logo {
+
+max-width: 100px;
+height: auto;
+
+}
+
+
+/*Serigrafia-------------------*/
+
+
+p {
+      font-size: $texto-intro;
+      color: $color-textos;
+}
+
+
+.galeria_1 {
+  
+  position: relative;
+  text-align: center;
+}
+ 
+
+.galeria_1 img {
+
+max-width: 350px;
+height: auto;
+  
+  }
+
+
+
+.galeria_1:hover {
+    transform: scale(1.1);
+  }
+
+
+
+.coleccion_1 {
+
+background-color: $color-destacar;
+ font-size: $texto-intro;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+/*Ilustraciones-------------------*/
+
+#ilustraciones img:hover {
+  transform: scale(1.1);
+}
+
+.flexIlustracion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  img {
+    max-height: 300px;
+    width: auto;
+    padding: 15px;
+
+   h3 {
+      color: #0c1110;
+      font-weight: bold;
+      text-align: center;
+      font-weight: 600;
+      margin: 15px;
+      padding: 15px;
+      font-size: 15pt;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+
+
+/*Tatuajes-------------------*/
+
+
+.flexTatuajes img:hover {
+  transform: scale(1.1);
+}
+
+.flexTatuajes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  img {
+    max-height: 300px;
+    width: auto;
+    padding: 15px;
+
+   h3 {
+      color: #0c1110;
+      font-weight: bold;
+      text-align: center;
+      font-weight: 600;
+      margin: 15px;
+      padding: 15px;
+      font-size: 15pt;
+      letter-spacing: 4px;
+    }
+  }
+}
+
+
+/*Contacto--------------------------------*/
+
+
+
+#formulario {
+  margin: 20px;
+  padding: 20px;
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+
+input[type=submit] {
+  background-color: black;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+      }
+    }
+  }
+}
