@@ -2,12 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 @import "variables"; 
 
+
+
+
+/*----- RESPONSIVE ------*/
+
 @media only screen and (max-width: 768px) {
 
 /*----- Menú ------*/
 #menu {
   text-align: center;
   position: fixed;
+  z-index: 1;
+
 }
   
 ul {
@@ -55,6 +62,11 @@ h3 {
       letter-spacing: 4px;
 }
 
+h1 {
+  
+  padding: 25px;
+}
+
 /*--------Footer----*/
 #footer {
   left: 0;
@@ -64,7 +76,11 @@ h3 {
   text-align: center;
   padding: 15px;
 }
+.logo {
+  
 
+  max-width: 100px;
+}
 .flexTatuajes video {
   padding: 15px;
 
@@ -80,8 +96,10 @@ padding: 15px;
 }
 
 }
+/*-----FIN RESPONSIVE-------*/
 
 /*--------------main------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -100,7 +118,7 @@ body {
 }
 
 main {
-  overflow: auto;
+  
   padding-bottom: 100px;
 }
 
@@ -118,49 +136,37 @@ h1 {
   font-weight: bold;
   text-align: center;
   font-weight: 600;
-  margin: 15px;
-  padding: 30px;
+  
+  padding: 15px;
   font-size: 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
 
 h3 {
-  color: #0c1110;
-  font-weight: bold;
-  text-align: center;
-  font-weight: 600;
-  margin: 15px;
-  padding: 15px;
-  font-size: 15pt;
-  letter-spacing: 4px;
+      color: #0c1110;
+      font-weight: bold;
+      font-weight: 600;
+      padding: 15px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      background-color: $color-destacar;
 }
 
 .texto {
-
-font-size: $texto-intro;
-text-align: center;
- display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 15px;
-
-}
-
-.btn {
   
-  background-color: $color-textos;
-  border-color: $color-textos;
+padding: 15px;
+text-align: center;
+
+}
+
+span {
+
+font-weight: bold;
 
 }
 
 
-#carrusel img {
-max-width: 800px;
-height:auto;
-
-}
 /*------Menú----------------*/
 
 
@@ -169,7 +175,6 @@ height:auto;
   text-align: right;
   display: flex;
   flex-flow: row wrap;
-  
 
   ul {
     list-style: none;
@@ -191,35 +196,57 @@ height:auto;
 
       a {
         text-decoration: none;
-        color: $color-textos;
+        color: white;
+
+        
       }
 
     }
   }
 }
 
-a:hover {
+.menuPrincipal {
+ z-index: 1;
+
+}
+
+li:hover {
   
-  background: white;
+  background: $color-textos;
 }
 
-/*--------Footer----*/
-#footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: $color-destacar;
-  text-align: center;
-  padding: 15px;
+a:active {
+
+ background: $color-textos;
 }
 
-.logo {
 
-max-width: 100px;
-height: auto;
+
+
+
+
+
+/*Index-------------------*/
+
+#boton {
+  
+  background-color: $color-textos;
+  border-color: $color-textos;
+
+#boton:hover {
+  
+background-color: $color-destacar;
+}
 
 }
 
+
+#carrusel  {
+max-width: 100%;
+height:auto;
+overflow: hidden;
+
+}
 
 /*Serigrafia-------------------*/
 
@@ -241,6 +268,7 @@ p {
 
 max-width: 350px;
 height: auto;
+padding: 15px;
   
   }
 
@@ -278,20 +306,10 @@ background-color: $color-destacar;
   justify-content: center;
 
   img {
-    max-height: 300px;
+    max-height: 500px;
     width: auto;
     padding: 15px;
 
-   h3 {
-      color: #0c1110;
-      font-weight: bold;
-      text-align: center;
-      font-weight: 600;
-      margin: 15px;
-      padding: 15px;
-      font-size: 15pt;
-      letter-spacing: 4px;
-    }
   }
 }
 
@@ -300,32 +318,14 @@ background-color: $color-destacar;
 /*Tatuajes-------------------*/
 
 
-.flexTatuajes img:hover {
+.galeria img:hover {
   transform: scale(1.1);
 }
+  .galeria video:hover {
 
-.flexTatuajes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  img {
-    max-height: 300px;
-    width: auto;
-    padding: 15px;
-
-   h3 {
-      color: #0c1110;
-      font-weight: bold;
-      text-align: center;
-      font-weight: 600;
-      margin: 15px;
-      padding: 15px;
-      font-size: 15pt;
-      letter-spacing: 4px;
-    }
+    transform: scale(1.1);
   }
-}
+
 
 
 /*Contacto--------------------------------*/
@@ -360,4 +360,45 @@ input[type=submit] {
       }
     }
   }
+}
+
+
+
+
+/*--------Footer----*/
+
+#footer {
+  
+  bottom: 0;
+  width: 100%;
+  background-color: $color-textos;
+  padding: 10px;
+  overflow: hidden;
+  height: 200px;
+  display: block;
+  margin: auto;
+   
+}
+
+.instagram {
+max-width: 50px;
+height: auto;
+
+}
+
+.linkedin {
+  
+max-width: 40px;
+height: auto;
+
+}
+
+.logo {
+  
+max-width: 200px;
+height: auto;
+display: flex;
+align-items: center;
+
+
 }
