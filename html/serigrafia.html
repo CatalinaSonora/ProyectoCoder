@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Colecciones de prendas textiles estampadas y diseñadas con la tecnica de serigrafía.">
    <meta name="keywords"  content="Portfolio, Diseño, Uruguay, Serigrafia, Diseño Gráfico, Textil">
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
@@ -23,31 +25,29 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
-			<header>
-				<div id="bannerSerigrafia"></div>
-				<div>
-					<nav id="menu">
-						<ul class="menuPrincipal">
-							<li> <a href="../index.html">Inicio</a></li>
-							<li> <a class="active" href="serigrafia.html">Serigrafía</a></li>
-							<li> <a href="pegotines.html">Ilustraciones</a></li>
-							<li> <a href="tatuajes.html">Tatuajes</a></li>
-							<li> <a href="contacto.html">Contacto</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header> 
-		</div>
+		<div class="col-md-12 topnav" id="myTopnav">
+							
+			<a href="../index.html">Inicio</a></li>
+			<a class="active" href="html/serigrafia.html">Serigrafía</a></li>
+			<a href="pegotines.html">Ilustraciones</a></li>
+			<a href="tatuajes.html">Tatuajes</a></li>
+			<a href="contacto.html">Contacto</a></li>
+							
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    		<i class="fa fa-bars"></i>
+	  		</a>
+					
+		</div>	
 	</div>
-
+	
 	<main>
 
 			<div class="row">
 				<div class="col-md-12 texto">
 
 						<h1>Serigrafía</h1>
-						<p> La serigrafía textil es una técnica mediante la cual se pueden estampar prendas de forma artesanal. </p>
+						<h3>¿Qué es?</h3>
+						<p> La serigrafía textil es una técnica mediante la cual se pueden <b>estampar prendas de forma artesanal.</b> Esto significa que <b>cada diseño es único.</b> Personalmente, disfruto de pensar cada diseño según la prenda, y si es posible trabajar reciclando ropa. Esto se conoce como <b>"Upcycling"</b></p>
 						<p>Estos son algunos de los trabajos que he hecho a lo largo de mi experimentación con ella.</p>
 				</div>
 			
@@ -55,44 +55,72 @@
 
 			<div class="row" id="galeria">
 
-				<div class="col-md-3 galeria_1">
-					<img class="img1" src="../img/s1.jpg">
-					<div class="coleccion_1">Colección #1</div>
+				<div class="col-md-6 galeria_1">
+					<a href="#coleccion_1"><img class="img1" src="../img/s4.jpg"></a>
+					<div class="portadas">Colección #1</div>
 				</div> 
 
-				<div class="col-md-3 galeria_1">
-					<img class="img1" src="../img/s3.jpg">
-					<div class="coleccion_1">Colección #2</div>
+				<div class="col-md-6 galeria_1">
+					<a href="#coleccion_2"><img class="img1" src="../img/coleccion2.jpg"></a>
+					<div class="portadas">Colección #2</div>
 				</div> 
 
-				<div class="col-md-3 galeria_1">
-					<img class="img1" src="../img/s5.jpg">
-					<div class="coleccion_1">Colección #3</div>
-				</div> 
-				<!---<div class="col-md-3">
-					<img class="img2" src="../img/s2.jpg">
+			</div>
+			<div class="row">
+				<div class="col-md-12" id="coleccion_1">
+					<h3>Colección #1</h3>
 				</div>
+			</div>
 
-				<div class="col-md-3">
-					<img class="img3" src="../img/s3.jpg">
+			<div class="row">
+				<div class="col-md-3 colecciones">
+					<img src="../img/s1.jpg">
+				</div>
+				<div class="col-md-3 colecciones">
+					<img src="../img/s2.jpg">
+				</div>
+				<div class="col-md-3 colecciones">
+					<img src="../img/s3.jpg">
+				</div>
+				<div class="col-md-3 colecciones">
+					<img src="../img/s4.jpg">
+				</div>
+			</div>
+			<div class="row galeria_1">
+				<div class="col-md-3 colecciones">
+					<img src="../img/s5.jpg">
+				</div>
+				<div class="col-md-3 colecciones">
+					<img src="../img/s6.jpg">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12" id="coleccion_1">
+					<h3>Colección #2</h3>
+				</div>
+			</div>
+
+			<div class="row" id="coleccion_2">
+				<div class="col-md-4 colecciones">
+					<img src="../img/gato1.jpg">
+				</div>
+				<div class="col-md-4 colecciones">
+					<img src="../img/gato2.jpg">
+				</div>
+				<div class="col-md-4 colecciones">
+					<img src="../img/gato3.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 colecciones">
+					<video src="../img/gato5.MP4" autoplay muted></video> 
+				</div>
+				<div class="col-md-6 colecciones">
+					<video src="../img/gato6.MP4" autoplay muted></video> 
 				</div>
 				
 			</div>
-			
-			<div class="row">	
-				
-				<div class="col-md-3">
-					<img class="img4" src="../img/s4.jpg">
-				</div>
-				<div class="col-md-3">
-					<img class="img5" src="../img/s5.jpg">
-				</div>
-				<div class="col-md-3">
-					<img class="img6" src="../img/s6.jpg">
-				</div>
-							
-			</div>--->
-
 
 	</main>
 </div>
@@ -116,6 +144,17 @@
 	</footer>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+
+<script>
+		function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</script>
 
 
 </body>
