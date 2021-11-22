@@ -1,8 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 /*-------textos-----*/
-/*----- RESPONSIVE ------*/
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {
     display: none; }
@@ -20,46 +18,10 @@
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left; } }
+    text-align: left; }
+  .texto.responsive {
+    text-align: justify; } }
 
-/*-------textos y titulos-----------*/
-@media screen and (max-width: 768px) {
-  .texto {
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    padding: 15px; }
-  h3 {
-    color: #0c1110;
-    font-weight: bold;
-    text-align: center;
-    font-weight: 600;
-    margin: 15px;
-    padding: 15px;
-    font-size: 5px;
-    letter-spacing: 4px; }
-  h1 {
-    padding: 25px; }
-  /*--------Footer----*/
-  #footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f7ecb0;
-    text-align: center;
-    padding: 15px; }
-  .logo {
-    max-width: 100px; }
-  .flexTatuajes video {
-    padding: 15px; }
-  /*----serigrafia------*/
-  .galeria_1 img {
-    padding: 15px; } }
-
-/*-----FIN RESPONSIVE-------*/
 /*--------------main------------------*/
 * {
   margin: 0;
@@ -68,7 +30,7 @@
 
 body {
   height: 100%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f4f0df; }
 
 .container-flow {
@@ -77,38 +39,7 @@ body {
 main {
   padding-bottom: 100px; }
 
-header {
-  height: 100px;
-  backgroud-color: #f7ecb0; }
-
-/*--------Títulos-----*/
-h1 {
-  color: #0c1110;
-  font-weight: bold;
-  text-align: center;
-  font-weight: 600;
-  padding: 15px;
-  font-size: 25px;
-  letter-spacing: 4px;
-  text-transform: uppercase; }
-
-h3 {
-  color: #0c1110;
-  font-weight: bold;
-  font-weight: 600;
-  padding: 15px;
-  font-size: 14px;
-  letter-spacing: 4px;
-  text-align: center;
-  background-color: #f7ecb0; }
-
-.texto {
-  padding: 15px;
-  text-align: center; }
-
-span {
-  font-weight: bold; }
-
+/*--------Menú-----*/
 .topnav {
   background-color: #f7ecb0;
   overflow: hidden;
@@ -134,76 +65,59 @@ span {
 .topnav .icon {
   display: none; }
 
-/*------Menú----------------
+/*--------Títulos-----*/
+h1 {
+  color: #0c1110;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 600;
+  padding: 30px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase; }
 
+h3 {
+  color: #0c1110;
+  font-weight: bold;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  text-align: center;
+  background-color: #f7ecb0; }
 
-#menu {
-  top: 0px;
-  text-align: right;
-  display: flex;
-  flex-flow: row wrap;
+.texto {
+  font-size: 12px;
+  padding: 15px;
+  text-align: center; }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-    background-color: $color-destacar;
-    
-    li {
-      
-      display: inline-block;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1pt;
-      padding-top: 16px;
-      padding: 16px 22px;
+span {
+  font-weight: bold; }
 
-      a {
-        text-decoration: none;
-        color: white;
-
-        
-      }
-
-    }
-  }
-}
-
-.menuPrincipal {
- z-index: 1;
-
-}
-
-li:hover {
-  
-  background: $color-textos;
-}
-
-a:active {
-
- background: $color-textos;
-}
-*/
 /*Index-------------------*/
 #boton {
   background-color: #0c1110;
-  border-color: #0c1110; }
-  #boton #boton:hover {
-    background-color: #f7ecb0; }
+  border-color: #0c1110;
+  color: white;
+  padding: 10px; }
+
+#boton:hover {
+  background-color: #f7ecb0; }
 
 #carrusel {
   max-width: 100%;
   height: auto;
   overflow: hidden;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center; }
 
 .bienServido img {
   padding: 20px;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  display: flex; }
 
 /*Serigrafia-------------------*/
 p {
@@ -253,9 +167,14 @@ p {
   flex-flow: row wrap;
   justify-content: center; }
   .flexIlustracion img {
-    max-height: 500px;
-    width: auto;
+    width: 100%;
+    height: auto;
     padding: 15px; }
+
+#ilustraciones a {
+  text-decoration: none;
+  color: #0c1110;
+  font-weight: bold; }
 
 /*Tatuajes-------------------*/
 .galeria img:hover {
@@ -275,55 +194,86 @@ p {
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical; }
-    #formulario input[type=text] label, #formulario select label, #formulario textarea label {
-      padding: 12px 12px 12px 0;
-      display: inline-block; }
-      #formulario input[type=text] label input[type=submit], #formulario select label input[type=submit], #formulario textarea label input[type=submit] {
-        background-color: black;
-        color: black;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        float: right; }
+  #formulario label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block; }
+  #formulario input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 10px; }
 
-/*--------Footer----*/
+/*Footer--------------------------------*/
 #footer {
   bottom: 0;
   width: 100%;
   background-color: #f7ecb0;
   padding: 10px;
   overflow: hidden;
-  height: 200px;
+  height: 300px;
   display: block;
-  margin: auto; }
-
-.instagram {
-  max-width: 50px;
-  height: auto; }
-
-.linkedin {
-  max-width: 40px;
-  height: auto; }
-
-.logo {
-  max-width: 200px;
-  height: auto;
-  background-color: #0c1110;
-  padding-left: 20px; }
-
-.paginas {
+  margin: auto;
+  text-align: center;
   display: flex;
-  flex-direction: row;
-  padding: 15px; }
-  .paginas a {
-    text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; }
+  #footer img {
+    max-width: 100%;
+    height: auto; }
+  #footer a {
     color: #0c1110;
-    font-weight: bold;
-    font-weight: 600;
+    text-decoration: none;
+    padding: 15px; }
+  #footer i {
+    padding: 15px;
+    align-items: center;
+    justify-items: center; }
+  #footer h3 {
+    background-color: #0c1110;
+    color: white; }
+
+/*Media Querys--------------------------------*/
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+
+@media screen and (max-width: 768px) {
+  [class*="col-md-6"] {
+    width: 100%; }
+  .texto {
+    text-align: center;
+    font-size: 30px; }
+  #carrusel {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
     padding: 20px;
-    font-size: 14px;
-    letter-spacing: 4px; }
-    .paginas a img {
-      text-decoration: none;
-      padding: 5px; }
+    display: flex;
+    justify-items: center;
+    align-items: center; }
+  #footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f7ecb0;
+    padding: 10px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    text-align: center; }
+    #footer img {
+      display: none; } }
