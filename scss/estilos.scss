@@ -71,7 +71,7 @@ main {
 /*--------Títulos-----*/
 
 h1 {
-  color: #0c1110;
+  color: $color-textos;
   font-weight: bold;
   text-align: center;
   font-weight: 600;
@@ -83,7 +83,7 @@ h1 {
 }
 
 h3 {
-      color: #0c1110;
+      color: $color-titulos;
       font-weight: bold;
       font-weight: 600;
       padding: 15px;
@@ -95,15 +95,18 @@ h3 {
 
 .texto {
  
-font-size: 12px;  
+font-size: 18px;
 padding: 15px;
 text-align: center;
 
 }
 
+
+
 span {
 
-font-weight: bold;
+background-color: $span;
+
 
 }
 
@@ -134,12 +137,14 @@ align-items: center;
 }
 
 
-.bienServido img{
+ .bienServido img{
   
   padding: 20px;
   max-width: 100%;
   height: auto;
   display: flex;
+  align-content: center;
+  justify-items: center;
   
 }
 
@@ -147,11 +152,6 @@ align-items: center;
 
 /*Serigrafia-------------------*/
 
-
-p {
-      font-size: $texto-intro;
-      color: $color-textos;
-}
 
 
 
@@ -177,7 +177,6 @@ height: auto;
 
   
   }
-
 
 
 .galeria_1:hover {
@@ -227,12 +226,12 @@ padding: 15px;
   justify-content: center;
 
   img {
-    width: 100%;
+
+    max-width: 100%;
     height: auto;
     padding: 15px;
 
   }
-
 
 }
 
@@ -248,15 +247,23 @@ font-weight: bold;
 
 /*Tatuajes-------------------*/
 
-
-.galeria img:hover {
-  transform: scale(1.1);
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-  .galeria video:hover {
 
-    transform: scale(1.1);
-  }
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 
 /*Contacto--------------------------------*/
@@ -283,7 +290,7 @@ input[type=text], select, textarea {
 }
 
 label {
-  padding: 12px 12px 12px 12px;
+  padding: 12px 12px 12px ;
   display: inline-block;
 }
 
@@ -351,9 +358,9 @@ color: white;
 
 
 
-
 /*Media Querys--------------------------------*/
 
+/*Menú--------------------------------*/
 
 @media screen and (max-width: 768px) {
   .topnav a:not(:first-child) {display: none;}
@@ -380,20 +387,25 @@ color: white;
 
 }
 
+/*Index--------------------------------*/
 
 @media screen and (max-width: 768px) {
 
 
 [class*="col-md-6"] {
     width: 100%;
-  }
 
+}
+ 
  .texto {
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
   }
 
-
+h1 {
+  
+  font-size: $titulo-responsive;
+}
 
 #carrusel  {
 max-width: 100%;
@@ -403,6 +415,21 @@ padding: 20px;
 display: flex;
 justify-items: center;
 align-items: center;
+}
+
+.bienServido {
+  
+width: 350px;
+height: auto;
+
+img{
+  padding-left: 15%;
+  width: 100%;
+  height: auto;
+  display: flex;
+
+}
+
 }
 
 #footer {
@@ -421,10 +448,40 @@ img {
 
  display: none;
 }
-
-
 }
 
+.flexIlustracion {
+  
+width: 350px;
+height: auto;
+
+img{
+  padding-left: 15%;
+  width: 100%;
+  height: auto;
+  display: flex;
+
 }
+}
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
 
 
