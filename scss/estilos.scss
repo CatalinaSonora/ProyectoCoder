@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "variables"; 
-@import "responsive"; 
-
-
-
-
-
-
 
 /*--------------main------------------*/
 
@@ -38,9 +31,8 @@ main {
   background-color: $color-destacar;
   overflow: hidden;
   z-index: 1;
-}
 
-.topnav a {
+ a {
   float: left;
   display: block;
   color: white;
@@ -48,6 +40,7 @@ main {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
 }
 
 
@@ -102,11 +95,9 @@ text-align: center;
 }
 
 
-
 span {
 
 background-color: $span;
-
 
 }
 
@@ -120,6 +111,7 @@ background-color: $span;
   color: white;
   padding: 10px;
 }
+
 #boton:hover {
   
 background-color: $color-destacar;
@@ -136,7 +128,6 @@ justify-items: center;
 align-items: center;
 }
 
-
  .bienServido img{
   
   padding: 20px;
@@ -152,10 +143,6 @@ align-items: center;
 
 /*Serigrafia-------------------*/
 
-
-
-
-
 .galeria_1 {
   
   position: relative;
@@ -163,10 +150,8 @@ align-items: center;
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-}
- 
 
-.galeria_1 img {
+img {
 
 max-width: 100%;
 height: auto;
@@ -174,16 +159,14 @@ padding: 15px;
 max-width: 350px;
 height: auto;
 
-
-  
-  }
+}
+   }
 
 
 .galeria_1:hover {
     transform: scale(1.1);
     cursor: pointer;
   }
-
 
 
 .portadas {
@@ -208,8 +191,10 @@ padding: 15px;
 }
 
 .colecciones:hover {
-    transform: scale(1.1);
-  }
+
+transform: scale(1.1);
+
+}
 
 
 
@@ -224,6 +209,7 @@ padding: 15px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-item: center;
 
   img {
 
@@ -241,7 +227,8 @@ padding: 15px;
 text-decoration: none;
 color: $color-textos;
 font-weight: bold;
-  }
+
+}
 
 
 
@@ -274,10 +261,7 @@ font-weight: bold;
   margin: 20px;
   padding: 20px;
 
-.btn {
 
-
-}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -298,8 +282,11 @@ input[type=submit] {
  background-color: black;
 color: white;
 padding: 10px;
-      }
+
 }
+
+}
+
 
 
 
@@ -328,6 +315,7 @@ height: auto;
 
 
 }
+
 a {
 
 
@@ -343,8 +331,8 @@ i {
 padding: 15px;
 align-items: center;
 justify-items: center;
-}
 
+}
 
 
 h3 {
@@ -383,8 +371,6 @@ color: white;
     text-align: left;
   }
 
-
-
 }
 
 /*Index--------------------------------*/
@@ -395,16 +381,6 @@ color: white;
 [class*="col-md-6"] {
     width: 100%;
 
-}
- 
- .texto {
-    text-align: center;
-    font-size: 15px;
-  }
-
-h1 {
-  
-  font-size: $titulo-responsive;
 }
 
 #carrusel  {
@@ -417,20 +393,19 @@ justify-items: center;
 align-items: center;
 }
 
-.bienServido {
+.texto {
+    text-align: center;
+    font-size: 15px;
+  }
+
+h1 {
   
-width: 350px;
-height: auto;
-
-img{
-  padding-left: 15%;
-  width: 100%;
-  height: auto;
-  display: flex;
-
+  font-size: $titulo-responsive;
 }
 
-}
+
+
+/*Footer--------------------------------*/
 
 #footer {
   
@@ -443,29 +418,18 @@ img{
   margin: auto;
   text-align: center;
 
+
 img {
   
-
  display: none;
 }
 }
-
-.flexIlustracion {
-  
-width: 350px;
-height: auto;
-
-img{
-  padding-left: 15%;
-  width: 100%;
-  height: auto;
-  display: flex;
-
 }
-}
-}
+
+/*Tatuajes--------------------------------*/
 
 @media screen and (max-width: 800px) {
+
   .column {
     flex: 50%;
     max-width: 50%;
