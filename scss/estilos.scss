@@ -22,7 +22,7 @@ body {
 
 main {
   
-  padding-bottom: 100px;
+  padding-bottom: 10%;
 }
 
 /*--------Menú-----*/
@@ -69,7 +69,7 @@ h1 {
   text-align: center;
   font-weight: 600;
   
-  padding: 30px;
+  padding: 2%;
   font-size: 25px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -79,7 +79,7 @@ h3 {
       color: $color-titulos;
       font-weight: bold;
       font-weight: 600;
-      padding: 15px;
+      padding: 2%;
       font-size: 15px;
       letter-spacing: 4px;
       text-align: center;
@@ -89,7 +89,7 @@ h3 {
 .texto {
  
 font-size: 18px;
-padding: 15px;
+padding: 2%;
 text-align: center;
 
 }
@@ -109,7 +109,7 @@ background-color: $span;
   background-color: $color-textos;
   border-color: $color-textos;
   color: white;
-  padding: 10px;
+  padding: 2%;
 }
 
 #boton:hover {
@@ -122,23 +122,30 @@ background-color: $color-destacar;
 max-width: 100%;
 height:auto;
 overflow: hidden;
-padding: 20px;
+padding: 5%;
 display: flex;
-justify-items: center;
+justify-content: center;
 align-items: center;
 }
 
- .bienServido img{
+ .bienServido {
+
+max-width: 100%;
+height: auto;
+
+
+
+  img{
   
-  padding: 20px;
+  padding: 2%;
   max-width: 100%;
   height: auto;
   display: flex;
-  align-content: center;
-  justify-items: center;
+ justify-content: center;
+align-content: center;
   
 }
-
+}
 
 
 /*Serigrafia-------------------*/
@@ -149,24 +156,17 @@ align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
+  
 
 img {
 
-max-width: 100%;
-height: auto;
-padding: 15px;
-max-width: 350px;
+padding: 5%;
+max-width: 70%;
 height: auto;
 
 }
    }
 
-
-.galeria_1:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-  }
 
 
 .portadas {
@@ -185,7 +185,7 @@ background-color: $color-destacar;
   
 max-width: 100%;
 height: auto;
-padding: 15px;
+padding: 3%;
 
 
 }
@@ -215,7 +215,7 @@ transform: scale(1.1);
 
     max-width: 100%;
     height: auto;
-    padding: 15px;
+    padding: 3%;
 
   }
 
@@ -226,7 +226,7 @@ transform: scale(1.1);
 
 text-decoration: none;
 color: $color-textos;
-font-weight: bold;
+
 
 }
 
@@ -259,13 +259,13 @@ font-weight: bold;
 
 #formulario {
   margin: 20px;
-  padding: 20px;
+  padding: 2%;
 
 
 
 input[type=text], select, textarea {
   width: 100%;
-  padding: 12px;
+  padding: 2%;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -274,14 +274,14 @@ input[type=text], select, textarea {
 }
 
 label {
-  padding: 12px 12px 12px ;
+  padding: 2% ;
   display: inline-block;
 }
 
 input[type=submit] {
  background-color: black;
 color: white;
-padding: 10px;
+padding: 2%;
 
 }
 
@@ -297,7 +297,7 @@ padding: 10px;
   bottom: 0;
   width: 100%;
   background-color: $color-destacar;
-  padding: 10px;
+  padding: 30px;
   overflow: hidden;
   height: 300px;
   display: block;
@@ -378,10 +378,21 @@ color: white;
 @media screen and (max-width: 768px) {
 
 
-[class*="col-md-6"] {
-    width: 100%;
+
+
+[class*="colecciones"] {
+    max-width: 50%;
 
 }
+
+[class*="imgResponsive"] {
+    max-width: 33%;
+    display: flex;
+    justify-items: center;
+      align-items: center;
+
+}
+
 
 #carrusel  {
 max-width: 100%;
@@ -396,6 +407,7 @@ align-items: center;
 .texto {
     text-align: center;
     font-size: 15px;
+
   }
 
 h1 {
@@ -403,16 +415,18 @@ h1 {
   font-size: $titulo-responsive;
 }
 
+h3 {
 
+  font-size: 12px;
 
-/*Footer--------------------------------*/
+}
 
-#footer {
+ #footer {
   
   bottom: 0;
   width: 100%;
   background-color: $color-destacar;
-  padding: 10px;
+  padding: 15px;
   height: 300px;
   display: block;
   margin: auto;
@@ -425,6 +439,7 @@ img {
 }
 }
 }
+
 
 /*Tatuajes--------------------------------*/
 
@@ -439,10 +454,19 @@ img {
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 50%;
+    max-width: 50%;
   }
-}
+
+  .esconder {
+
+display: none;
+
+  }
+
+ }
+
+
 
 
 
